@@ -1,0 +1,56 @@
+html {
+    background-color: burlywood;
+    margin: 0;
+    font-size: 2.5rem;
+}
+.container {
+    height: 1000px;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: 
+        "a a a a b b b b b b b b"
+        "a a a a b b b b b b b b"
+        "c c c c b b b b b b b b"
+        "c c c c b b b b b b b b"
+        "d d d d d d e e e e e e"
+        "d d d d d d e e e e e e"
+        "d d d d d d f f f f f f"
+        "g g g g g g f f f f f f";
+}
+
+.first {
+    grid-area: a;
+    background-color: pink;
+}
+
+.second {
+    grid-area: b;
+    background-color: blueviolet;
+}
+
+.third {
+    grid-area: c;
+    background-color:green;
+}
+
+.fourth {
+    grid-area: d;
+    background-color: khaki;
+}
+
+.fifth {
+    grid-area: e;
+    background-color: rgb(61, 55, 116);
+}
+
+.sixth {
+    grid-area: f;
+    background-color: rgb(112, 56, 31);
+}
+
+.seventh {
+    grid-area: g;
+    background-color: rgb(138, 115, 138);
+}
